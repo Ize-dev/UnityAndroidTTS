@@ -1,20 +1,20 @@
 # UnityAndroidTTS
-Basic implementation of text to speech for Unity on Android.
+Basic Implementation of Text-to-Speech for Unity on Android
 
-1. Add the AndroidTTS script to any gameobject
-2. On the same gameobject add a reference in any of your classes with: private AndroidTTS tts;
-3. In your Start() get the tts-component: tts = GetComponent<AndroidTTS>();
-4. ???
-5. Call tts.Speak("Your text here");
+Add the AndroidTTS script to any GameObject.
+In any of your classes, create a reference to it:
+private AndroidTTS tts;
+In your Start() method, get the AndroidTTS component:
+tts = GetComponent<AndroidTTS>();
+Call tts.Speak("Your text here"); to make it speak.
+That's it!
 
-Done.
+You can also use additional methods such as tts.SetPitch(), tts.SetSpeechRate(), and tts.Stop().
 
-You can also use tts.SetPitch(), tts.SetSpeechRate() and tts.Stop()
+The script will use the text-to-speech provider configured on your Android device, so there’s no need to set a locale via code.
 
-It will use the configured tts-provider on your android device so there is no need to set a locale via script.
-
-Should be pretty self explanatory.
+This implementation should be straightforward.
 
 Tested with Unity 6000.0.*
 
-Enjoy.
+Enjoy!
